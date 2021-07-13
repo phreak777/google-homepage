@@ -3,64 +3,101 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/reset.css" media="screen">
-        <link rel="stylesheet" href="css/main.css" media="screen">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" media="screen">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <title>My very own useless Google homepage!</title>
     </head>
 
     <body>
-        <header class="cell-head">
+
+        <div id="header">
             <nav>
-                <span class="head-section">
-                    <a href="#">Gmail</a>
-                    <a href="#">Images</a>
-                    <a href="#">Google Apps</a>
-                    <a href="#">Login</a>
+                <span id="head-nav">
+                    <span>
+                        <a href="#">Gmail</a>
+                    </span>
+                    <span>
+                        <a href="#">Images</a>
+                    </span>
+                    <span>
+                        <a
+                            id="apps-button"
+                            href="https://www.metallica.com"
+                            target="_blank">
+                            <img title="Google apps" src="https://www.pinclipart.com/picdir/middle/11-111759_more-apps-comments-more-apps-icon-png-clipart.png" alt="Google apps">
+                        </a>
+                    </span>
+                    <span>
+                        <a
+                            id="login-button"
+                            href="https://www.metallica.com"
+                            target="_blank">
+                            <img title="Cute kitty cat!" src="https://www.odysseyhouse.com.au/wordpress/wp-content/uploads/2018/02/cute-kitten-SQUARE@.jpg" alt="Cute kitty cat!">
+                        </a>
+                    </span>
                 </span>
             </nav>
-        </header>
-        <div class="cell-mid">
+        </div>
+        
+        <div id="main">
             <div>
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-            <br>
+                <br>
+                <br>
                 <form method="get" action="#">
                     <label for="searchBox">
                         <div>
                             <div>
-                                <input type="text" name="searchBox" placeholder="Write your search words here!">
-                            </div>
-                            <div>
+                                <input class="google-it" type="text" name="searchBox" placeholder="Write your search words here!">
+                                <br>
+                                <br>
                                 <input type="button" name="googleSearch" value="Google Search">
                                 <input type="button" name="lucky" value="I'm feeling lucky">
                             </div>
                         </div>
                     </label>
                 </form>
+                <br>
+                <br>
+                <div class="font-smaller">
+                    <span>Google is offered in: </span>
+                    <a href="#">español</a>
+                    <a href="#">català</a>
+                    <a href="#">galego</a>
+                    <a href="#">euskara</a>
+                </div>
             </div>
         </div>
-        <footer class="cell-foot1">
-            <div class="foot1-section">
-                <span>Location</span>
+        
+        <footer id="footer">
+            <div id="foot-loc">
+                <span>Spain</span>
+                <script>
+                    
+                </script>
             </div>
-        </footer>
-        <footer class="cell-foot2">
-            <hr>
-            <div class="foot2-section">
+            <div id="foot-nav-1">
                 <span>
-                    <a href="#">About</a>
-                    <a href="#">Advertising</a>
-                    <a href="#">Business</a>
+                    <a href="#">About</a></span>
+                    <span>
+                    <a href="#">Advertising</a></span>
+                    <span>
+                    <a href="#">Business</a></span>
+                    <span>
                     <a href="#">How Search Works</a>
                 </span>
+            </div>
+            <div id="foot-nav-2">
                 <span>
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a></span>
+                    <span>
+                    <a href="#">Terms</a></span>
+                    <span>
                     <a href="#">Settings</a>
                 </span>
             </div>
         </footer>
+
     </body>
 </html>
