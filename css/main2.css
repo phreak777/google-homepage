@@ -2,25 +2,29 @@
     box-sizing: border-box;
 }
 html, body { height: 100%;}
+a { text-decoration: none;}
+a:hover { text-decoration: underline;}
 body {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
 }
+/*span {
+    display: inline-block;  change the display type
+    margin: 100px 0;        apply the needed vertical margins 
+}*/
 
 #header {
     float: left;
     width: 100%;
     flex: 0 0 auto;
-    border: 1px solid yellow;
-    padding: 15px;
+    padding: 2px;
+    font-size: medium;
 }
 #head-nav {
     float: right;
-    width: 50%;
+    width: 75%;
     text-align: right;
-    border: 1px solid rgb(255, 177, 9);
     padding: 15px;
 }
 #main {
@@ -31,33 +35,40 @@ body {
     align-content: center;
     flex: 6 0 auto;
     padding: 15px;
-    border: 1px solid blue;
 }
 #footer {
     float: left;
     width: 100%;
     flex: 0 0 auto;
     padding: 2px;
+    font-size: small;
 }
 #foot-loc {
     width: 100%;
     float: left;
-    padding: 2px;
-    border: 1px solid rgb(82, 238, 61);
+    padding: 20px;
 }
 #foot-nav-1 {
-    width: 67%;
+    width: 64%;
     float: left;
-    text-align: center;
-    padding: 2px;
-    border: 1px solid rgb(82, 50, 224);
+    text-align: left;
+    padding: 20px;
+}
+#foot-nav-1 > span {
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 #foot-nav-2 {
-    width: 33%;
+    width: 36%;
     float: left;
-    text-align: center;
-    padding: 2px;
-    border: 1px solid rgb(82, 50, 224);
+    text-align: right;
+    padding: 20px;
+}
+#foot-nav-2 > span {
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .col-1 {width: 8.33%;}
@@ -74,6 +85,10 @@ body {
 .col-12 {width: 100%;}
 
 .goog-img {
-    min-height: 350px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgb(228, 25, 25);
+}
+.font-smaller {
+    font-size: smaller;
 }
