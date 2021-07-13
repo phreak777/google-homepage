@@ -1,13 +1,18 @@
 * {
     box-sizing: border-box;
 }
+html, body { height: 100%;}
 body {
-    min-height: 100vh;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
 }
 
 #header {
     float: left;
     width: 100%;
+    flex: 0 0 auto;
     border: 1px solid yellow;
     padding: 15px;
 }
@@ -20,35 +25,38 @@ body {
 }
 #main {
     width: 100%;
+    height: auto;
     float: left;
     text-align: center;
+    align-content: center;
+    flex: 6 0 auto;
     padding: 15px;
     border: 1px solid blue;
 }
 #footer {
     float: left;
     width: 100%;
-    border: 1px solid red;
-    padding: 15px;
+    flex: 0 0 auto;
+    padding: 2px;
 }
 #foot-loc {
     width: 100%;
     float: left;
-    padding: 15px;
+    padding: 2px;
     border: 1px solid rgb(82, 238, 61);
 }
 #foot-nav-1 {
     width: 67%;
     float: left;
     text-align: center;
-    padding: 15px;
+    padding: 2px;
     border: 1px solid rgb(82, 50, 224);
 }
 #foot-nav-2 {
     width: 33%;
     float: left;
     text-align: center;
-    padding: 15px;
+    padding: 2px;
     border: 1px solid rgb(82, 50, 224);
 }
 
@@ -64,3 +72,8 @@ body {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+.goog-img {
+    min-height: 350px;
+    border: 1px solid rgb(228, 25, 25);
+}
