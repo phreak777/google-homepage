@@ -1,0 +1,61 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: Roboto, sans-serif;
+    min-width: 98%;
+    min-height: 98%;
+    display: grid;
+    gap: 2px 2px;
+    grid-template-areas: 
+        "head head head"
+        "mid mid mid"
+        "foot1 foot1 foot1"
+        "foot2 foot2 foot2";
+}
+.head-section, .mid-section, .foot-section {
+    display: grid;
+    grid-template-rows: 20% auto 10% 10%;
+    grid-template-columns: 20% auto 20%;
+}
+.head-section {
+    grid-area: head;
+    background: yellow;
+}
+.mid-section {
+    grid-area: mid;
+    background: blue;
+}
+.foot1-section {
+    grid-area: foot1;
+    background: red;
+}
+.foot2-section {
+    grid-area: foot2;
+    background: rgb(124, 241, 169);
+    text-align: right;
+}
+.cell-head .cell-mid .cell-foot {
+    background: cadetblue;
+}
+.cell-head {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    justify-self: right;
+}
+.cell-mid {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    align-self: center;
+    justify-self: center;
+}
+.cell-foot1 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    justify-self: stretch;
+}
+.cell-foot2 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+    text-align: right;
+}
