@@ -19,9 +19,13 @@ body {
     grid-template-columns: 20% auto 20%;
 }
 .head-section {
-    grid-area: head;
+    float: right;
     background: yellow;
 }
+/*.head-section {
+    grid-area: head;
+    background: yellow;
+}*/
 .mid-section {
     grid-area: mid;
     background: blue;
@@ -39,10 +43,16 @@ body {
     background: cadetblue;
 }
 .cell-head {
+    position: fixed;
+    top: opx;
+    width: 100%;
+    overflow: hidden;
+}
+/*.cell-head {
     grid-row: 1 / 2;
     grid-column: 1 / 4;
     justify-self: right;
-}
+}*/
 .cell-mid {
     grid-row: 2 / 3;
     grid-column: 1 / 4;
